@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foro Escolar</title>
+    <link rel="stylesheet" href="../ESTILOS/stylesnoticias.css">
+</head>
+<body>
+    <header>
+        <h1>Escuela Tecnica n°2 Emilio rebuelto</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="registrarse.html">Registrarse</a></li>
+                <li><a href="iniciar-sesion.html">Iniciar sesión</a></li>
+                <li><a href="dudas.html">Dudas</a></li>
+                <li><a href="blogbiblioteca.html">blog biblioteca</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Sistema de Tickets</h1>
+        <form id="ticketForm">
+            <label for="ticketTitle">Título:</label>
+            <input type="text" id="ticketTitle" required>
+            <label for="ticketDescription">Descripción:</label>
+            <textarea id="ticketDescription" required></textarea>
+            <button type="submit">Crear Ticket</button>
+        </form>
+        <div id="ticketList">
+            <h2>Lista de Tickets</h2>
+            <ul id="tickets"></ul>
+            <button id="clearTickets">Limpiar Lista</button>
+        </div>
+    </div>
+    <script src="../JS/noticias.js"></script>
+</body>
+</html>
